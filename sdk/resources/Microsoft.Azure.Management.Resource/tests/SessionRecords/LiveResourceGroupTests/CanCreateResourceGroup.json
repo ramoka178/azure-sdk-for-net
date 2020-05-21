@@ -1,22 +1,22 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourcegroups/csmrg9300?api-version=2019-10-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYjlmMTM4YTEtMWQ2NC00MTA4LTg0MTMtOWVhM2JlMWMxYjJkL3Jlc291cmNlZ3JvdXBzL2NzbXJnOTMwMD9hcGktdmVyc2lvbj0yMDE5LTEwLTAx",
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/csmrg2030?api-version=2019-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL2NzbXJnMjAzMD9hcGktdmVyc2lvbj0yMDE5LTEwLTAx",
       "RequestMethod": "PUT",
       "RequestBody": "{\r\n  \"location\": \"South Central US\",\r\n  \"tags\": {\r\n    \"department\": \"finance\",\r\n    \"tagname\": \"tagvalue\"\r\n  }\r\n}",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "6149534b-2a75-4144-a87e-264b69ae1362"
+          "87cf28a2-09fd-4345-aa14-22a387ba5715"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28207.04",
+          "FxVersion/4.6.28801.04",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
-          "Microsoft.Azure.Management.ResourceManager.ResourceManagementClient/3.0.0.0"
+          "Microsoft.Azure.Management.ResourceManager.ResourceManagementClient/3.3.0.0"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -36,13 +36,13 @@
           "1199"
         ],
         "x-ms-request-id": [
-          "8825dc41-c6ca-4d2f-8ade-0a636ce1b776"
+          "ebf05c12-b069-4fa5-8712-7edaeedba43a"
         ],
         "x-ms-correlation-request-id": [
-          "8825dc41-c6ca-4d2f-8ade-0a636ce1b776"
+          "ebf05c12-b069-4fa5-8712-7edaeedba43a"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20191226T074045Z:8825dc41-c6ca-4d2f-8ade-0a636ce1b776"
+          "WESTUS:20200521T173324Z:ebf05c12-b069-4fa5-8712-7edaeedba43a"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -51,7 +51,7 @@
           "nosniff"
         ],
         "Date": [
-          "Thu, 26 Dec 2019 07:40:45 GMT"
+          "Thu, 21 May 2020 17:33:24 GMT"
         ],
         "Content-Length": [
           "276"
@@ -63,26 +63,26 @@
           "-1"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg9300\",\r\n  \"name\": \"csmrg9300\",\r\n  \"type\": \"Microsoft.Resources/resourceGroups\",\r\n  \"location\": \"southcentralus\",\r\n  \"tags\": {\r\n    \"department\": \"finance\",\r\n    \"tagname\": \"tagvalue\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg2030\",\r\n  \"name\": \"csmrg2030\",\r\n  \"type\": \"Microsoft.Resources/resourceGroups\",\r\n  \"location\": \"southcentralus\",\r\n  \"tags\": {\r\n    \"department\": \"finance\",\r\n    \"tagname\": \"tagvalue\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
       "StatusCode": 201
     },
     {
-      "RequestUri": "/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourcegroups?api-version=2019-10-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYjlmMTM4YTEtMWQ2NC00MTA4LTg0MTMtOWVhM2JlMWMxYjJkL3Jlc291cmNlZ3JvdXBzP2FwaS12ZXJzaW9uPTIwMTktMTAtMDE=",
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups?api-version=2019-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzP2FwaS12ZXJzaW9uPTIwMTktMTAtMDE=",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "9ff6082d-bbeb-4a6b-83d3-c2e74f37433a"
+          "999a3661-5035-4a41-b130-40d71484198d"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28207.04",
+          "FxVersion/4.6.28801.04",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
-          "Microsoft.Azure.Management.ResourceManager.ResourceManagementClient/3.0.0.0"
+          "Microsoft.Azure.Management.ResourceManager.ResourceManagementClient/3.3.0.0"
         ]
       },
       "ResponseHeaders": {
@@ -96,13 +96,13 @@
           "11999"
         ],
         "x-ms-request-id": [
-          "44048e23-0e18-4448-a5e8-dbc9ce56a63c"
+          "23fef947-a0ec-4ca5-be15-d19bc7f933e7"
         ],
         "x-ms-correlation-request-id": [
-          "44048e23-0e18-4448-a5e8-dbc9ce56a63c"
+          "23fef947-a0ec-4ca5-be15-d19bc7f933e7"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20191226T074045Z:44048e23-0e18-4448-a5e8-dbc9ce56a63c"
+          "WESTUS:20200521T173324Z:23fef947-a0ec-4ca5-be15-d19bc7f933e7"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -111,7 +111,7 @@
           "nosniff"
         ],
         "Date": [
-          "Thu, 26 Dec 2019 07:40:45 GMT"
+          "Thu, 21 May 2020 17:33:24 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -120,29 +120,29 @@
           "-1"
         ],
         "Content-Length": [
-          "1883"
+          "3166"
         ]
       },
-      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg9473\",\r\n      \"name\": \"csmrg9473\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westeurope\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg5506\",\r\n      \"name\": \"csmrg5506\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"southcentralus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Deleting\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg9300\",\r\n      \"name\": \"csmrg9300\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"southcentralus\",\r\n      \"tags\": {\r\n        \"department\": \"finance\",\r\n        \"tagname\": \"tagvalue\"\r\n      },\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/NetworkWatcherRG\",\r\n      \"name\": \"NetworkWatcherRG\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"centralus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg6003\",\r\n      \"name\": \"csmrg6003\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"centralus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg4815\",\r\n      \"name\": \"csmrg4815\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"centralus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/AppConfigTestResource\",\r\n      \"name\": \"AppConfigTestResource\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/TagsApiSDK\",\r\n      \"name\": \"TagsApiSDK\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westus\",\r\n      \"tags\": {\r\n        \"Owner\": \"Ran\"\r\n      },\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    }\r\n  ]\r\n}",
+      "ResponseBody": "{\r\n  \"value\": [\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg1371\",\r\n      \"name\": \"csmrg1371\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westeurope\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg5103\",\r\n      \"name\": \"csmrg5103\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westeurope\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/NetworkWatcherRG\",\r\n      \"name\": \"NetworkWatcherRG\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westeurope\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg8185\",\r\n      \"name\": \"csmrg8185\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"southcentralus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Deleting\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg2030\",\r\n      \"name\": \"csmrg2030\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"southcentralus\",\r\n      \"tags\": {\r\n        \"department\": \"finance\",\r\n        \"tagname\": \"tagvalue\"\r\n      },\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/sdk-testrg\",\r\n      \"name\": \"sdk-testrg\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"eastus2\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/RMTEST1\",\r\n      \"name\": \"RMTEST1\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"centralus\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/RMTEST2\",\r\n      \"name\": \"RMTEST2\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"centralus\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/rg-001\",\r\n      \"name\": \"rg-001\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"eastus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/TagsApiSDK\",\r\n      \"name\": \"TagsApiSDK\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"eastus\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg\",\r\n      \"name\": \"Ds-TestRg\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"eastus\",\r\n      \"tags\": {},\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg2309\",\r\n      \"name\": \"csmrg2309\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg9532\",\r\n      \"name\": \"csmrg9532\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    },\r\n    {\r\n      \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg6146\",\r\n      \"name\": \"csmrg6146\",\r\n      \"type\": \"Microsoft.Resources/resourceGroups\",\r\n      \"location\": \"westus\",\r\n      \"properties\": {\r\n        \"provisioningState\": \"Succeeded\"\r\n      }\r\n    }\r\n  ]\r\n}",
       "StatusCode": 200
     },
     {
-      "RequestUri": "/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourcegroups/csmrg9300?api-version=2019-10-01",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYjlmMTM4YTEtMWQ2NC00MTA4LTg0MTMtOWVhM2JlMWMxYjJkL3Jlc291cmNlZ3JvdXBzL2NzbXJnOTMwMD9hcGktdmVyc2lvbj0yMDE5LTEwLTAx",
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/csmrg2030?api-version=2019-10-01",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL2NzbXJnMjAzMD9hcGktdmVyc2lvbj0yMDE5LTEwLTAx",
       "RequestMethod": "GET",
       "RequestBody": "",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "a2165da8-0d42-4094-8598-587fad52439f"
+          "88166115-8233-4db8-9fa5-e78d16c309b6"
         ],
         "Accept-Language": [
           "en-US"
         ],
         "User-Agent": [
-          "FxVersion/4.6.28207.04",
+          "FxVersion/4.6.28801.04",
           "OSName/Windows",
           "OSVersion/Microsoft.Windows.10.0.18363.",
-          "Microsoft.Azure.Management.ResourceManager.ResourceManagementClient/3.0.0.0"
+          "Microsoft.Azure.Management.ResourceManager.ResourceManagementClient/3.3.0.0"
         ]
       },
       "ResponseHeaders": {
@@ -156,13 +156,13 @@
           "11998"
         ],
         "x-ms-request-id": [
-          "2b9a9c24-8ad2-42a8-8593-b621108b2d36"
+          "1a8866ea-a150-44fa-9e30-b1cba4885659"
         ],
         "x-ms-correlation-request-id": [
-          "2b9a9c24-8ad2-42a8-8593-b621108b2d36"
+          "1a8866ea-a150-44fa-9e30-b1cba4885659"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS2:20191226T074045Z:2b9a9c24-8ad2-42a8-8593-b621108b2d36"
+          "WESTUS:20200521T173324Z:1a8866ea-a150-44fa-9e30-b1cba4885659"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -171,7 +171,7 @@
           "nosniff"
         ],
         "Date": [
-          "Thu, 26 Dec 2019 07:40:45 GMT"
+          "Thu, 21 May 2020 17:33:24 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -183,16 +183,16 @@
           "276"
         ]
       },
-      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/b9f138a1-1d64-4108-8413-9ea3be1c1b2d/resourceGroups/csmrg9300\",\r\n  \"name\": \"csmrg9300\",\r\n  \"type\": \"Microsoft.Resources/resourceGroups\",\r\n  \"location\": \"southcentralus\",\r\n  \"tags\": {\r\n    \"department\": \"finance\",\r\n    \"tagname\": \"tagvalue\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
+      "ResponseBody": "{\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/csmrg2030\",\r\n  \"name\": \"csmrg2030\",\r\n  \"type\": \"Microsoft.Resources/resourceGroups\",\r\n  \"location\": \"southcentralus\",\r\n  \"tags\": {\r\n    \"department\": \"finance\",\r\n    \"tagname\": \"tagvalue\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Succeeded\"\r\n  }\r\n}",
       "StatusCode": 200
     }
   ],
   "Names": {
     "CanCreateResourceGroup": [
-      "csmrg9300"
+      "csmrg2030"
     ]
   },
   "Variables": {
-    "SubscriptionId": "b9f138a1-1d64-4108-8413-9ea3be1c1b2d"
+    "SubscriptionId": "afe8f803-7190-48e3-b41a-bc454e8aad1a"
   }
 }

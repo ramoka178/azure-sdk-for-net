@@ -46,9 +46,24 @@ namespace Microsoft.Azure.Management.ResourceManager
         string SubscriptionId { get; set; }
 
         /// <summary>
+        /// The ID of the source subscription.
+        /// </summary>
+        string SubscriptionId1 { get; set; }
+
+        /// <summary>
         /// The API version to use for this operation.
         /// </summary>
         string ApiVersion { get; }
+
+        /// <summary>
+        /// The ID of the target subscription.
+        /// </summary>
+        string SubscriptionId2 { get; set; }
+
+        /// <summary>
+        /// The API version to use for this operation.
+        /// </summary>
+        string ApiVersion11 { get; set; }
 
         /// <summary>
         /// The preferred language for the response.
