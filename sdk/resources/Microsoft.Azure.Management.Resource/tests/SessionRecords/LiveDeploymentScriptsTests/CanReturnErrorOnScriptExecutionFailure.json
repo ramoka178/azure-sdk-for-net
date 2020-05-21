@@ -1,13 +1,13 @@
 {
   "Entries": [
     {
-      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet887?api-version=2019-10-01-preview",
-      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDg4Nz9hcGktdmVyc2lvbj0yMDE5LTEwLTAxLXByZXZpZXc=",
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
       "RequestMethod": "PUT",
       "RequestBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"properties\": {\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"azPowerShellVersion\": \"2.7.0\"\r\n  },\r\n  \"identity\": {\r\n    \"type\": \"UserAssigned\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {}\r\n    }\r\n  },\r\n  \"location\": \"West US\"\r\n}",
       "RequestHeaders": {
         "x-ms-client-request-id": [
-          "82b3f231-1c06-4446-963d-f9a672da0679"
+          "0d6b493e-1ce4-4ce1-8235-03d40dbd2506"
         ],
         "Accept-Language": [
           "en-US"
@@ -32,17 +32,26 @@
         "Pragma": [
           "no-cache"
         ],
-        "x-ms-failure-cause": [
-          "gateway"
+        "Retry-After": [
+          "17"
+        ],
+        "Azure-AsyncOperation": [
+          "https://management.azure.com/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/providers/Microsoft.Resources/locations/West%20US/deploymentScriptOperationResults/dbf817f1-e094-42f0-96dd-793f43f2c140?api-version=2019-10-01-preview"
         ],
         "x-ms-request-id": [
-          "4050047d-b25f-4516-a12d-d042f745f511"
+          "2ad1eef9-fa6d-435e-aff6-671b9c09d277"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-writes": [
+          "1199"
         ],
         "x-ms-correlation-request-id": [
-          "4050047d-b25f-4516-a12d-d042f745f511"
+          "9a26164a-ab38-4c3b-a938-d13eb0b65bf9"
         ],
         "x-ms-routing-request-id": [
-          "WESTUS:20200521T204216Z:4050047d-b25f-4516-a12d-d042f745f511"
+          "WESTUS:20200521T231421Z:9a26164a-ab38-4c3b-a938-d13eb0b65bf9"
         ],
         "Strict-Transport-Security": [
           "max-age=31536000; includeSubDomains"
@@ -51,7 +60,694 @@
           "nosniff"
         ],
         "Date": [
-          "Thu, 21 May 2020 20:42:15 GMT"
+          "Thu, 21 May 2020 23:14:21 GMT"
+        ],
+        "Content-Length": [
+          "1433"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {},\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 201
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "a15ddf52-bb0e-4940-8f5e-c205475d60ea"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "e4186ed2-7568-4b30-9f06-39c51a9ddd80"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11999"
+        ],
+        "x-ms-correlation-request-id": [
+          "31e8b3b4-0216-42ad-b6ab-5dcde8a0fb3a"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231421Z:31e8b3b4-0216-42ad-b6ab-5dcde8a0fb3a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:14:21 GMT"
+        ],
+        "Content-Length": [
+          "1433"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Creating\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {},\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "c64235c1-0ade-48fd-a8d3-2b7f6e65aadf"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "a7a1104a-6232-4b7d-9368-73895597d08b"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11998"
+        ],
+        "x-ms-correlation-request-id": [
+          "2345ae6a-aab5-4943-97a5-361adb17ca7a"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231432Z:2345ae6a-aab5-4943-97a5-361adb17ca7a"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:14:31 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:24.0560691Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "62e6e671-eef1-442c-b416-53027e03d342"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "a6a8903c-fe6b-4f8a-b0bc-3d57d908f2a6"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11997"
+        ],
+        "x-ms-correlation-request-id": [
+          "8a12adad-329d-47eb-8b55-a4af87a8fbfd"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231442Z:8a12adad-329d-47eb-8b55-a4af87a8fbfd"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:14:41 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:35.9672714Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "bb6014d5-74e2-481f-bd9e-692b129275f0"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "74de6ea8-ae21-4f8e-922c-cfa9fc44b46a"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11996"
+        ],
+        "x-ms-correlation-request-id": [
+          "03cd2191-f427-47de-876a-e1009ae98a92"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231452Z:03cd2191-f427-47de-876a-e1009ae98a92"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:14:51 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:35.9672714Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "824b3c78-94cf-4ce0-be38-41fcccb43eab"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "1548e786-3eda-408a-b78a-c8691d7b211d"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11995"
+        ],
+        "x-ms-correlation-request-id": [
+          "4ef4c6f4-bb74-4817-a11a-83b566e10d1c"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231502Z:4ef4c6f4-bb74-4817-a11a-83b566e10d1c"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:01 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:57.3247323Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "94da5906-4aad-45c0-8cb7-8a36251597bc"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "11e972c2-1872-46b7-baf9-7d17279c84d7"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11994"
+        ],
+        "x-ms-correlation-request-id": [
+          "5e294db6-92dc-455f-a2a2-148a52464254"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231512Z:5e294db6-92dc-455f-a2a2-148a52464254"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:11 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:57.3247323Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "971845af-d6fd-44c8-907c-12fef31ab8fe"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "022938a8-314c-47fe-96b6-e7e939ab9ca9"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11993"
+        ],
+        "x-ms-correlation-request-id": [
+          "16d04b31-8120-4fe3-8280-0e01abbbbce1"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231522Z:16d04b31-8120-4fe3-8280-0e01abbbbce1"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:21 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:57.3247323Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "722c9f78-eaff-4d15-b5da-95b2a128771b"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "a6c3fe00-7113-4e65-9d79-38d14a27ae66"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11992"
+        ],
+        "x-ms-correlation-request-id": [
+          "82797354-2e77-408f-9851-2d161128269d"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231532Z:82797354-2e77-408f-9851-2d161128269d"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:31 GMT"
+        ],
+        "Content-Length": [
+          "1956"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"ProvisioningResources\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:14:57.3247323Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "f4c5080a-3027-4f8d-9d3d-90766d21580e"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "a05f69b6-0e0d-4bf9-9de5-ae3d903e24c2"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11991"
+        ],
+        "x-ms-correlation-request-id": [
+          "eb34430d-f67e-4932-819b-53b967f13c5e"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231542Z:eb34430d-f67e-4932-819b-53b967f13c5e"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:42 GMT"
+        ],
+        "Content-Length": [
+          "2048"
+        ],
+        "Content-Type": [
+          "application/json; charset=utf-8"
+        ],
+        "Expires": [
+          "-1"
+        ]
+      },
+      "ResponseBody": "{\r\n  \"kind\": \"AzurePowerShell\",\r\n  \"identity\": {\r\n    \"type\": \"userAssigned\",\r\n    \"tenantId\": \"fdf584f5-e031-4669-88e3-118b47b5eba0\",\r\n    \"userAssignedIdentities\": {\r\n      \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi\": {\r\n        \"principalId\": \"6a8e18b7-dba6-4988-92da-2b8ffacc576b\",\r\n        \"clientId\": \"582106c1-c368-4ac6-a686-bdcbb8e58d00\"\r\n      }\r\n    }\r\n  },\r\n  \"location\": \"West US\",\r\n  \"systemData\": {\r\n    \"createdBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"createdByType\": \"Application\",\r\n    \"createdAt\": \"2020-05-21T23:14:19.7998275Z\",\r\n    \"lastModifiedBy\": \"c9db805c-edc3-4eff-b07d-1713c5ea229a\",\r\n    \"lastModifiedByType\": \"Application\",\r\n    \"lastModifiedAt\": \"2020-05-21T23:14:19.7998275Z\"\r\n  },\r\n  \"properties\": {\r\n    \"provisioningState\": \"Failed\",\r\n    \"azPowerShellVersion\": \"2.7.0\",\r\n    \"scriptContent\": \"This-will-fail.\",\r\n    \"retentionInterval\": \"P1DT2H\",\r\n    \"timeout\": \"P1D\",\r\n    \"containerSettings\": {},\r\n    \"status\": {\r\n      \"startTime\": \"2020-05-21T23:15:38.8761663Z\",\r\n      \"endTime\": \"2020-05-21T23:15:39.4855132Z\",\r\n      \"expirationTime\": \"2020-05-23T01:15:39.4855132Z\",\r\n      \"error\": {\r\n        \"code\": \"DeploymentScriptOperationFailed\",\r\n        \"message\": \"The client '6a8e18b7-dba6-4988-92da-2b8ffacc576b' with object id '6a8e18b7-dba6-4988-92da-2b8ffacc576b' does not have authorization to perform action 'Microsoft.ContainerInstance/register/action' over scope '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a' or the scope is invalid. If access was recently granted, please refresh your credentials.\"\r\n      }\r\n    },\r\n    \"cleanupPreference\": \"Always\"\r\n  },\r\n  \"id\": \"/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887\",\r\n  \"type\": \"Microsoft.Resources/deploymentScripts\",\r\n  \"name\": \"CanReturnErrorOnScriptExecutionFailure--azsmnet6887\"\r\n}",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet6887?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cy9DYW5SZXR1cm5FcnJvck9uU2NyaXB0RXhlY3V0aW9uRmFpbHVyZS0tYXpzbW5ldDY4ODc/YXBpLXZlcnNpb249MjAxOS0xMC0wMS1wcmV2aWV3",
+      "RequestMethod": "DELETE",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "f14c9d83-5a0d-4759-aa35-cebf6517da2f"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-request-id": [
+          "a9cca2c6-7990-4154-95bc-bfe6a84d655e"
+        ],
+        "Server": [
+          "Microsoft-HTTPAPI/2.0"
+        ],
+        "x-ms-ratelimit-remaining-subscription-deletes": [
+          "14999"
+        ],
+        "x-ms-correlation-request-id": [
+          "a759038c-591f-4627-8376-acc9e5747baf"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231554Z:a759038c-591f-4627-8376-acc9e5747baf"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:54 GMT"
+        ],
+        "Expires": [
+          "-1"
+        ],
+        "Content-Length": [
+          "0"
+        ]
+      },
+      "ResponseBody": "",
+      "StatusCode": 200
+    },
+    {
+      "RequestUri": "/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts?api-version=2019-10-01-preview",
+      "EncodedRequestUri": "L3N1YnNjcmlwdGlvbnMvYWZlOGY4MDMtNzE5MC00OGUzLWI0MWEtYmM0NTRlOGFhZDFhL3Jlc291cmNlZ3JvdXBzL0RzLVRlc3RSZy9wcm92aWRlcnMvTWljcm9zb2Z0LlJlc291cmNlcy9kZXBsb3ltZW50U2NyaXB0cz9hcGktdmVyc2lvbj0yMDE5LTEwLTAxLXByZXZpZXc=",
+      "RequestMethod": "GET",
+      "RequestBody": "",
+      "RequestHeaders": {
+        "x-ms-client-request-id": [
+          "9d0f785c-d76a-478d-ab04-40decbb98e6f"
+        ],
+        "Accept-Language": [
+          "en-US"
+        ],
+        "User-Agent": [
+          "FxVersion/4.6.28801.04",
+          "OSName/Windows",
+          "OSVersion/Microsoft.Windows.10.0.18363.",
+          "Microsoft.Azure.Management.ResourceManager.DeploymentScriptsClient/3.3.0.0"
+        ]
+      },
+      "ResponseHeaders": {
+        "Cache-Control": [
+          "no-cache"
+        ],
+        "Pragma": [
+          "no-cache"
+        ],
+        "x-ms-ratelimit-remaining-subscription-reads": [
+          "11990"
+        ],
+        "x-ms-request-id": [
+          "20766934-97bf-4a58-b555-36efa6344cea"
+        ],
+        "x-ms-correlation-request-id": [
+          "20766934-97bf-4a58-b555-36efa6344cea"
+        ],
+        "x-ms-routing-request-id": [
+          "WESTUS:20200521T231554Z:20766934-97bf-4a58-b555-36efa6344cea"
+        ],
+        "Strict-Transport-Security": [
+          "max-age=31536000; includeSubDomains"
+        ],
+        "X-Content-Type-Options": [
+          "nosniff"
+        ],
+        "Date": [
+          "Thu, 21 May 2020 23:15:54 GMT"
         ],
         "Content-Type": [
           "application/json; charset=utf-8"
@@ -60,16 +756,16 @@
           "-1"
         ],
         "Content-Length": [
-          "609"
+          "12"
         ]
       },
-      "ResponseBody": "{\r\n  \"error\": {\r\n    \"code\": \"FailedIdentityOperation\",\r\n    \"message\": \"Identity operation for resource '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourceGroups/Ds-TestRg/providers/Microsoft.Resources/deploymentScripts/CanReturnErrorOnScriptExecutionFailure--azsmnet887' failed with error 'Failed to perform resource identity operation. Status: 'BadRequest'. Response: '{\\\"error\\\":{\\\"code\\\":\\\"BadRequest\\\",\\\"message\\\":\\\"Resource '/subscriptions/afe8f803-7190-48e3-b41a-bc454e8aad1a/resourcegroups/Ds-TestRg/providers/Microsoft.ManagedIdentity/userAssignedIdentities/filiz-user-assigned-msi' was not found.\\\"}}'.'.\"\r\n  }\r\n}",
-      "StatusCode": 400
+      "ResponseBody": "{\r\n  \"value\": []\r\n}",
+      "StatusCode": 200
     }
   ],
   "Names": {
     "CanReturnErrorOnScriptExecutionFailure": [
-      "azsmnet887"
+      "azsmnet6887"
     ]
   },
   "Variables": {
